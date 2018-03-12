@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/style2.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <title>Iron Gym | Welcome!</title>
+  </head>
+
+
+  <body>
+  <header>
+
+  		<div class="container">
+  			<div id="brand">
+  			<a href="home.html"><img src="./img/logo4.png" style="width: 200px; height: 50px;"></a>
+  		</div>
+
+<nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+            <li class="actual"><a href="galeriefoto.html">Gallery</a></li>
+            <li><a href="abonamente.html">Membership</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+</nav>
+
+  </div>
+ </header>
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+<div class="slideshow-container">
+
+   <div class="slides">
+    <div class="numbertext">1 / 8</div>
+    <img src="./img/img1.jpg" style="width:100%"> 
+  </div>
+
+  <div class="slides">
+    <div class="numbertext">2 / 8</div>
+    <img src="./img/img2.jpg" style="width:100%">
+  </div>
+
+  <div class="slides">
+    <div class="numbertext">3 / 8</div>
+    <img src="./img/img3.jpg" style="width:100%">
+  </div>
+
+  <div class="slides">
+    <div class="numbertext">4 / 8</div>
+    <img src="./img/img4.jpg" style="width:100%">
+  </div>
+
+  <div class="slides">
+    <div class="numbertext">5 / 8</div>
+    <img src="./img/img5.jpg" style="width:100%">
+  </div>
+
+  <div class="slides">
+    <div class="numbertext">6 / 8</div>
+    <img src="./img/img6.jpg" style="width:100%">
+  </div>
+
+  <div class="slides">
+    <div class="numbertext">7 / 8</div>
+    <img src="./img/img7.jpg" style="width:100%">
+  </div>
+
+<div class="slides">
+    <div class="numbertext">8 / 8</div>
+    <img src="./img/img8.jpg" style="width:100%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+   
+
+<footer>
+      <p>Iron Gym, Copyright &copy; 2018</p>
+</footer>
+
+</body>
+</html>
